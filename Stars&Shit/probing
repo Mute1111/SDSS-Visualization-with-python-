@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+
+# Load the dataset
+df = pd.read_csv('data.csv')
+
+# Get all unique class types
+class_types = df['class'].unique()
+
+# Print the unique class types
+print("Unique Class Types:")
+for class_type in class_types:
+    print(class_type)
